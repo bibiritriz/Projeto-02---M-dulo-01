@@ -1,5 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 1;
   padding: 0;
   box-sizing: border-box;
 }
@@ -14,7 +15,7 @@ body {
   background: linear-gradient(0deg, rgba(89, 94, 222, 1) 30%, rgba(61, 64, 157, 1) 50%, rgba(33, 34, 90, 1) 78%);
   margin: auto;
 
-  width: 800px;
+  width: 700px;
 
   box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -24,20 +25,20 @@ body {
 .cabecalho {
   border-radius: 10px;
   text-align: center;
-  margin: 25px;
-
+  margin: 1.2rem;
 }
 
-h1 {
+.titulo {
   color: #ffd000;
-  font-size: xx-large;
-  padding: 5px;
+  font-size: 35px;
+  padding: 0.4rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .subtitulo {
-  margin-top: 10px;
-  margin-bottom: 40px;
+  padding: 1rem;
+  margin-bottom: 0.1rem;
 }
 
 .flex-container {
@@ -47,7 +48,9 @@ h1 {
 }
 
 .subtitulo-2 {
-  font-size: 25px;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -55,24 +58,29 @@ h1 {
   background: rgb(33, 34, 90);
   background: linear-gradient(0deg, rgba(33, 34, 90, 1) 30%, rgba(61, 64, 157, 1) 50%, rgba(89, 94, 222, 1) 78%);
 
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
-  width: 100%;
+  width: 96%;
+}
+
+span {
+  font-weight: 700;
 }
 
 .votacao {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 input {
   background-color: #eae8e8;
   border-radius: 5px;
   border: none;
-  padding: 4px;
-  width: 70%;
-  margin: 10px;
+  padding: 0.4rem;
+  width: 85%;
+  margin-bottom: 1.5rem;
+
 }
 
 input:hover {
@@ -96,23 +104,73 @@ input:focus {
   justify-content: center;
   border-radius: 10px;
   border-color: rgb(3, 112, 196);
-  padding: 20px;
-  margin: 20px;
-  width: 40%;
+  width: 10rem;
 }
 
 button {
+  font-weight: 500;
   background: rgba(50, 42, 175, 1);
   border-radius: 5px;
   border: none;
-  padding: 10px;
+  padding: 0.6rem;
   width: 60%;
-  margin: 10px;
+  margin: 15px;
   color: #ffffff;
   font-size: 15px;
+  user-select: none;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: rgba(89, 94, 222, 1);
   transition: 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+    margin: 0;
+
+    .container {
+      width: 100%;
+    }
+
+    button {
+      width: 50%;
+    }
+
+    .titulo {
+      font-size: 21px;
+      padding: 0.3rem;
+    }
+
+    .subtitulo-2 {
+      font-size: medium;
+    }
+
+    .flex-container {}
+
+    input {
+      width: 80%;
+    }
+
+    .cadastro {
+      width: 90%;
+      align-items: center;
+      padding: 0.5rem;
+      margin: 0.5rem;
+    }
+
+    .votacao {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    .enquete {
+      margin: 1rem;
+      width: 60%;
+    }
+  }
 }
