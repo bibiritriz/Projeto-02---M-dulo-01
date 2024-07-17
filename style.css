@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-  background: rgb(50, 42, 175);
-  background: linear-gradient(0deg, rgba(50, 42, 175, 1) 30%, rgba(29, 10, 135, 1) 70%);
+  background: rgb(89,94,222);
+background: linear-gradient(0deg, rgba(89,94,222,1) 30%, rgba(61,64,157,1) 50%, rgba(33,34,90,1) 78%);
   margin: auto;
 
   width: 800px;
@@ -36,37 +36,38 @@ h1 {
   text-align: center;
 }
 
-.subtitulo{
+.subtitulo {
   margin-top: 10px;
   margin-bottom: 40px;
 }
 
 .flex-container {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-around;
 }
 
 .cadastro {
-  background: rgb(29, 10, 135);
-  background: linear-gradient(0deg, rgba(29, 10, 135, 1) 30%, rgba(50, 42, 175, 1) 70%);
+  background: rgb(33,34,90);
+background: linear-gradient(0deg, rgba(33,34,90,1) 30%, rgba(61,64,157,1) 50%, rgba(89,94,222,1) 78%);
 
   padding: 20px 40px;
   border-radius: 10px;
 }
 
-.votacao{
+.votacao {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-input{
-  background-color: #efeaea;
+input {
+  background-color: #d8d5d5;
   border-radius: 5px;
-  border:none;
+  border: none;
   padding: 4px;
   width: 90%;
-  margin: 10px; 
+  margin: 10px;
 }
 
 input:hover {
@@ -74,18 +75,21 @@ input:hover {
   transition: 0.5s;
 }
 
-input:focus{
+input:focus {
   outline: none;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(50, 42, 175, 1);
 }
 
 .enquete {
-  background: rgb(113, 183, 234);
-  background: linear-gradient(0deg, rgba(113, 183, 234, 1) 6%, rgba(3, 122, 216, 1) 60%);
-  
-  
-  border: 10px;
+  background: rgb(16, 180, 203);
+  background: linear-gradient(0deg, rgba(16, 180, 203, 1) 30%, rgba(11, 128, 189, 1) 70%);
+  border: 10px solid rgba(11, 128, 189, 1);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 10px;
   border-color: rgba(3, 122, 216, 1);
   padding: 40px;
