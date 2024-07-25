@@ -1,11 +1,12 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 1;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin-top: 0.5rem;
   color: white;
   background-color: #ded9d9;
 }
@@ -25,20 +26,19 @@ body {
 .cabecalho {
   border-radius: 10px;
   text-align: center;
-  margin: 1.2rem;
+  margin: 1.5rem;
 }
 
 .titulo {
   color: #ffd000;
   font-size: 35px;
-  padding: 0.4rem;
+  padding: 0.3rem 1rem;
   text-align: center;
   font-weight: 700;
 }
 
 .subtitulo {
   padding: 1rem;
-  margin-bottom: 0.1rem;
 }
 
 .flex-container {
@@ -124,6 +124,10 @@ button {
 button:hover {
   background-color: rgba(89, 94, 222, 1);
   transition: 0.5s;
+}
+
+.feito-por{
+  margin-top: 0.6rem;
 }
 
 @media screen and (max-width: 500px) {
